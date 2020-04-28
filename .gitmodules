@@ -1,0 +1,3 @@
+[submodule "CameraEnvironment/Pendulum-problem"]
+	path = CameraEnvironment/Pendulum-problem
+	url = https://github.com/Rufaim/Pendulum-problem.git
