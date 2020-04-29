@@ -8,7 +8,7 @@ Reward is a sum of manhattan differences between object and camera positions for
 
 **Action size**:  2  <br>
 **Observation size**: 8
-![reward_function](http://www.sciweavers.org/tex2img.php?eq=%0AReward%28t%29%20%3D%20-%5Csum_%7B%5Ctau%20%3D%200%7D%5ET%20%7Cx_%7Bcamera%7D%28t%20%2B%20%5Ctau%29%20-%20x_%7Bobject%7D%28t%20%2B%20%5Ctau%29%7C%20%2B%20%7Cy_%7Bcamera%7D%28t%20%2B%20%5Ctau%29%20-%20y_%7Bobject%7D%28t%20%2B%20%5Ctau%29%7C%2C&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![reward_function](visualization_example/reward_function.jpg)
 
 Observation consist of eight values: two camera normalized coordinates, 
 two normalized camera speed values on each axis, 
@@ -39,7 +39,7 @@ For demonstration purpose [DDPG](https://arxiv.org/pdf/1509.02971v2.pdf) model f
 ### Visualization
 Results are visualized as AVI video files.
 An example of frame from visualization:
-![Learning Process](visualization example/example frame.png)
+![Learning Process](visualization_example/example_frame.png)
 Blue curve shows object trajectory.
 Red cross tracks camera focal point. 
 Red rectangle indicates camera frame size.
