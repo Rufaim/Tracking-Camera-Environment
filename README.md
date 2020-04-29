@@ -7,7 +7,7 @@ Object and camera moving on a square field.
 Reward is a sum of manhattan differences between object and camera positions for one simulation step.
 
 **Action size**:  2  <br>
-**Observation size**: 8
+**Observation size**: 8 <br>
 ![reward_function](visualization_example/reward_function.jpg)
 
 Observation consist of eight values: two camera normalized coordinates, 
