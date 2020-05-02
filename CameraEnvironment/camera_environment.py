@@ -77,7 +77,7 @@ class CameraEnvironment(object):
         assert not self.done , "Simulation is finished"
 
         if self._random_generator.random() < self.failure_chance:
-            act = self._random_generator.randint(-1,1,size=(2,)) # Ooops, camera controller sudden insanity
+            act = self._random_generator.uniform(-1,1,size=(2,)) # Ooops, camera controller sudden insanity
         else:
             act = np.clip(action,-1,1)
 
