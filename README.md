@@ -7,7 +7,7 @@ Object and camera moving on a square field.
 Reward is a sum of manhattan differences between object and camera positions for one simulation step.
 
 **Action size**:  2  <br>
-**Observation size**: 8
+**Observation size**: 8 <br>
 ![reward_function](visualization_example/reward_function.jpg)
 
 Observation consist of eight values: two camera normalized coordinates, 
@@ -26,6 +26,8 @@ After pushing action camera will be in changing velocity process for next 50 tic
 ### Usage
 1. Clone this repository \
 ```git clone https://github.com/Rufaim/Tracking-Camera-Environment.git```
+1. Sync DDPG submodule\
+```git submodule update --init```
 2. Go to source root directory \
 ```cd CameraEnvironment/CameraEnvironment```
 3. Run train script \
@@ -33,8 +35,8 @@ After pushing action camera will be in changing velocity process for next 50 tic
 4. Run visualization script \
 ```python3 visualize_results.py```
 
-To change parameters of the model please use global variables of the train script.
-For demonstration purpose [DDPG](https://arxiv.org/pdf/1509.02971v2.pdf) model from [my other repository](https://github.com/Rufaim/Pendulum-problem) is used is used.
+To change parameters of the model please use global variables of the train script. \
+For environment demonstration purpose [DDPG](https://arxiv.org/pdf/1509.02971v2.pdf) model from [my other repository](https://github.com/Rufaim/Pendulum-problem) is used.
 
 ### Visualization
 Results are visualized as AVI video files.
